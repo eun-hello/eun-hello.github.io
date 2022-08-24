@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@import url(./core.css);
+@import url(./logo.css);
+
+html,body {width: 100%; font-size: 16px; color: #333; font-family: 'HallymGothic-Regular';}
+
+/* * {outline: 1px solid red;} */
+
+.color01 {color: #1D4167;}
+.color02 {color: #fee600;}
+.color03 {color: #C60226;}
+.color04 {color: #3481dc;}
+.color05 {color: #d67a27;}
+.color06 {color: #f05254;}
+
+/*=================================header====================================*/
+
+#main {display: none; width: 100%; height: 100vh;}
+
+#header {width: 100%; height: 5vw; z-index: 5; position: sticky; top: 0; font-family: 'Cairo', sans-serif;}
+#header.active {background-color: rgb(255, 255, 255, .7);}
+#hader.headco {background-color: #fff;}
+
+#naviga {width: 90%; height: 5vw; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;}
+/* #navi {width: 50%;}  */
+#navi li {width: 9vw; text-align: center;}
+#navi li > a {font-size: 2rem; /* font-weight: bold; */}
+#navi li:nth-child(1):hover a {color: #333; transform: scale(110%);} 
+#navi li:nth-child(2):hover a {color: #1d4167; transform: scale(110%);} 
+#navi li:nth-child(3):hover a {color: #fee600; transform: scale(110%);} 
+#navi li:nth-child(4):hover a {color: #C60226; transform: scale(110%);} 
+#navi li:nth-child(5):hover a {color: #3481dc; transform: scale(110%);} 
+#navi li:nth-child(6):hover a {color: #d67a27; transform: scale(110%);} 
+#navi li:nth-child(7):hover a {color: #f05254; transform: scale(110%);} 
+
+/*==========================header moblie====================================*/
+
+#head_m {width: 100%; height: 8vw; display: none; font-family: 'Cairo', sans-serif; position: fixed; top: 0; z-index: 5;}
+#head_m.active {background-color: none;}
+.head_min {width: 90%; height: 8vw; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; z-index: 5;}
+.subm {font-size: 5vw; z-index: 5; cursor: pointer;}
+
+#moblie_nav {width: 100%; height: 100vh; display: none; background-color: rgb(51, 51, 51, 0.5); position: sticky; top: 8vw; position: fixed; top: 0; z-index: 5;}
+#moblie_nav.active {display: flex !important;}
+
+.moblie_menu {width: 60%; height: 100vh; margin-left: -40%; display: flex; flex-direction: column; transition: margin .5s; background-color: #fff;}
+.moblie_menu.active {margin-left: 0; transition: margin .5s;}
+.moblie_menu li {padding: 3% 5%; margin-left: 2%; font-size: 1rem; font-weight: bold; z-index: 5;}
+.moblie_menu li:first-child {padding: 5% 5%; margin: 2% 0;}
+.moblie_menu li:nth-child(3) {color: #1d4167;}
+.moblie_menu li:nth-child(4) {color: #fee600;}
+.moblie_menu li:nth-child(5) {color: #C60226;}
+.moblie_menu li:nth-child(6) {color: #3481dc;}
+.moblie_menu li:nth-child(7) {color: #d67a27;}
+.moblie_menu li:nth-child(8) {color: #f05254;}
+
+.moblie_click {width: 40%; height: 100vh; position: relative; left: 0;}
+.logo01 {z-index: 5; cursor: pointer;}
+
+/*------------------------footer-------------------------------------------*/
+
+footer {width: 100%; height: auto; position: relative; z-index: 1; overflow: hidden;}
+
+address {width: 90%; height: inherit; margin: 0% auto 4%; display: flex; align-items: center; font-style: normal;}
+
+#footicon {width: 20%; display: flex; align-items: center;}
+#footicon li {width: 25%; margin: 2%;}
+#footicon img {width: 100%;}
+#footicon li:hover img {transform: scale(110%); transition: 0.3s;} 
+.footerline {width: 2px; height: 2.5vw; background-color: #333; border-radius: 10px;}
+
+#footerlogo {width: 20%; display: flex; align-items: center; margin-left: 1.5vw; display: none; transition: 0.4s;}
+#footerlogo.active {display: block; transition: 0.4s;}
+#footerlogo li {width: 20%; margin: 0 2%;}
+#footerlogo img {width: 100%;}
+
+#help00 {font-size: 2rem; margin-left: 1.5vw; display: flex; align-items: center; font-weight: 400;}
+.help01 {display: none;}
+.help02 {display: none;}
+.help03 {display: none;}
+
+.help01.active {display: block;}
+.help02.active {display: block;}
+.help03.active {display: block;}
+
+/*=====================ScrollBar==============================*/
+
+body::-webkit-scrollbar {
+    width: 0.6vw;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+     /* 스크롤바의 길이 */
+    background: #C60226; /* 스크롤바의 색상 */
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+    background: #fff;  /*스크롤바 뒷 배경 색상*/
+}
+
+/* =====================keyframe================================*/
+
+@media screen and  (min-width : 1260px) and (max-width : 1440px){
+    html,body {font-size: 14px;}
+}
+@media screen and  (min-width : 1025px) and (max-width : 1259px){
+    html,body {font-size: 12px;}
+    #navi li > a {font-size: 1.6rem;}
+    #help00 {font-size: 1.6rem;}
+}
+@media screen and  (min-width : 801px) and (max-width : 1024px){
+    html,body {font-size: 10px;}
+    #navi li > a {font-size: 1.4rem;}
+    #help00 {font-size: 1.4rem;}
+}
+@media screen and  (max-width : 850px) {
+    html,body {font-size: 10px;}
+    #navi li > a {font-size: 1.4rem;}
+    #help00 {font-size: 1.4rem;}
+
+    #footicon {width: 40%;}
+    #footerlogo {width: 40%;}
+}
+@media screen and (max-width: 800px) {
+    html,body {font-size: 10px;}
+    #navi li > a {font-size: 1rem; color: #333;}
+    #help00 {font-size: 1.1rem;}
+
+    #head_m {display: block;}
+    #header {display: none;}
+
+}
+@media screen and (max-width: 680px) {
+    #navi li > a {font-size: 0.8rem;}
+    #help00 {font-size: 1rem;}
+}
+@media screen and (max-width: 680px) {
+    #navi li > a {font-size: 0.5rem;}
+    #navi li {width: 11vw;}
+    #help00 {font-size: 0.7rem;}
+}
+
