@@ -115,7 +115,7 @@ body {height: auto;}
 
 #section02 {
     width: 90%; height: auto; margin: 0 auto 5%; border: 1px solid #999; display: flex; padding: 1vw;
-    background: url(../img/log-in/icons-gray-bg.png);
+    background: url(../img/login/icons-gray-bg.png);
 }
 .s02_01 {width: 50%; display: flex; align-items: center; justify-content: center;}
 .s02_01 img {border-radius: 10px; width: 80%;}
@@ -132,7 +132,7 @@ body {height: auto;}
 .s02_02bot ul li div {width: 40%; padding: 0.4vw 0;} 
 
 .logBtn {
-    width: 15%; height: 4.2vw; background:url(../img/log-in/btn_login_m.jpg) no-repeat center/cover; 
+    width: 15%; height: 4.2vw; background:url(../img/login/btn_login_m.jpg) no-repeat center/cover; 
     color: #fff; text-align: center; line-height: 4.4vw; font-size: 1.4rem; margin-left: -0.1vw;
     border-radius: 10px;
 }
@@ -209,7 +209,7 @@ body {height: auto;}
     0% {transform: translateX(0);}
     100% {transform: translate(100%);}
 }
-.swal2-actions button {width: 20%; font-size: 1.5rem; font-weight: bold; background:url(../img/log-in/btn_login_m.jpg) no-repeat center/cover !important;}
+.swal2-actions button {width: 20%; font-size: 1.5rem; font-weight: bold; background:url(../img/login/btn_login_m.jpg) no-repeat center/cover !important;}
 /*===============================MEDIA SCREEN=============================================*/
 
 @media screen and (min-width : 2000px) {

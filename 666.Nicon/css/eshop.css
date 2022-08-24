@@ -1,0 +1,128 @@
+@import url(./swip.css);
+@import url(./core.css);
+@import url(./common.css);
+
+#header {
+    width: 95%; height: 7vw; padding-left: 5%; background-color: rgb(254, 254, 254);
+    display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgb(225, 225, 225);
+} 
+.headericon {display: flex; align-items: center;}
+.headericon a > img {width: 5vw;}
+.headericon > ul {display: flex; flex-direction: column; margin-left: 1vw;}
+.headericon > ul li {display: flex; padding: 0.3vh 0;}
+.headericon i {font-size: 1rem;}
+.log {color: #555;}
+
+/*=====================================headII========================================*/
+
+#headii {margin-right: 5%;}
+#headii li{padding: 0 0.7vw; width: 2vw;}
+#headii img {width: 100%;}
+
+#topadv {width: 100%; background-color: #333;}
+#topadv p {width: 90%; margin: 0 auto; padding: 0.5% 0; color: #fff; text-align: center;}
+#topadv .cross {position: absolute; font-size: 1.5rem; right: 6%; cursor: pointer; transition: all 0.2s;}
+.cross.active {animation: iia 0.2s linear;}
+
+@keyframes iia {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(90deg);}
+}
+/*=====================================navi========================================*/
+
+#navi {width: 100%; height: 3vw; position: sticky; top: 0; background-color: #fff; border-bottom: 1px solid rgb(225, 225, 225); z-index: 20;}
+#navi > ul {width: 90%; margin: 0 auto; height: inherit;}
+#navi li {width: 11.1%; height: inherit; display: flex; align-items: center; justify-content: center;}
+#navi li:hover a {color: #fee600;}
+
+/*=====================================Section01========================================*/
+
+#section01 {width: 90%; margin: 0 auto; margin-top: 1vw; display: flex; justify-content: space-between;}
+#section01 .shoptopbanner {width: 32%; height: 7.6vw;}
+.shoptopbanner img {width: 100%; height: 100%;}
+.shoptopbanner01 {background-color: #fee600;}
+
+/*=====================================Section02========================================*/
+
+.eshopTitle {font-size: 2rem; margin: 5% 0 2% 0;}
+.eshopTitle span {font-weight: bold;}
+#section02 {margin-left: 5%; width: 90%; margin-bottom: 5%;}
+
+.porde {display: flex; justify-content: space-between;}
+.nexot {width: 48%; display: flex; justify-content: space-between;}
+.nexotCont {width: 46%;}
+.porde img {width: 100%; border-radius: 10px;}
+
+.pordeTxt span {font-size: 1.1rem;}
+.tagRed {color: red; font-size: 1.2rem;}
+.ttii {margin-top: 2%;}
+.ttii span {font-size: 1.1rem;}
+
+/*=====================================Section03========================================*/
+
+#section03 {margin-left: 5%; width: 90%; margin-bottom: 5%;} 
+.eshopTitle01 {text-align: center; margin-bottom: 2%; font-size: 2rem;}
+.eshopTitle01 span {font-weight: bold;}
+.nexout {display: flex; justify-content: space-between;}
+.nexbot {margin-top: 2%;}
+.nex {width: 47%; display: flex; justify-content: space-between;}
+.nexcontain {width: 44%;}
+.nexcontain img {width: 100%; border-radius: 5%;}
+
+.nextxttxt {font-size: 1.1rem; margin-top: 2%;}
+.redtxt {color: red;}
+.boldtxt {font-weight: bold; font-size: 1.2rem;}
+
+/*=====================================Footer========================================*/
+
+#bottomicon {width: 45%; height: 8vw; margin: 0 auto; display: flex; margin-bottom: 5%;}
+.iiicccon {width: 20%;}
+.iiicccon a {width: 100%; display: flex; align-items: center; flex-direction: column;}
+.iiicccon img {width: 40%;}
+.iiicccon img:hover {transform: scale(120%); transition: 0.3s;}
+.iiicccon p {margin-top: 10px;}
+
+.f_nikon {width: 10vw; position: relative; left: 80vw; top: -5vw;}
+/*===================================Media Screen=====================================*/
+
+@media screen and (min-width : 2000px) {
+    html,body {font-size: 20px;}
+}
+@media screen and  (min-width : 1260px) and (max-width : 1400px){
+    html,body {font-size: 14px;}
+}
+@media screen and  (min-width : 1025px) and (max-width : 1259px){
+    html,body {font-size: 12px;}
+}
+@media screen and  (min-width : 801px) and (max-width : 1024px){
+    html,body {font-size: 10px;}
+    #header {height: 10vw;}
+
+    #bottomicon {width: 60%;}
+}
+@media screen and (max-width : 800px){
+    html,body {font-size: 12px;}
+    #header {display: none;}
+    #headermoblie {display: block;}
+    #sideSNS {top: 60vh;}
+    #section01 {padding: 0;}
+    #sideSNS {display: none;}
+    #iconbot {display: flex; background-color: #f2f2f2;}
+
+    #navi {display: none;}
+    .swiper {width: 100%; height: 30vw;}
+    .nexout {flex-direction: column;}
+    .nex {width: 100%;}
+    .nexcontain {margin-top: 3%;}
+    .nexnex {margin-top: 1.5%;}
+
+    .porde {flex-direction: column;}
+    .nexot {width: 100%;}
+
+    #topadv {display: none;}
+
+    #bottomicon {width: 100%; height: 10vw;}
+}
+@media screen and (max-width : 450px){
+    .iiicccon a p {font-size: 0.5rem;}
+}

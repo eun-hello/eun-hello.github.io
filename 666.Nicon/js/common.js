@@ -56,9 +56,9 @@ if(matchMedia("screen and (max-width: 800px)").matches){
 };
 
 if(matchMedia("screen and (max-width: 850px)").matches){ 
-    document.querySelector('.fot_vips').innerHTML = '<li class="fot_vips"><a href="../777.vips/index.html"><img src="./_img/_logo/vips_brand010.png" alt="vips"></a></li>'
+    document.querySelector('.fot_vips').innerHTML = '<li class="fot_vips"><a href="../777.vips/index.html"><img src="./img/logo/vips_brand010.png" alt="vips"></a></li>'
 } else {
-    document.querySelector('.fot_vips').innerHTML = '<li class="fot_vips"><a href="../777.vips/index.html" target="_blank" title="VIPS"><div class="logoVIP letsgo"><img src="./_img/_logo/VIPS04.png" alt="1" class="vips01"></div></a></li>'
+    document.querySelector('.fot_vips').innerHTML = '<li class="fot_vips"><a href="../777.vips/index.html" target="_blank" title="VIPS"><div class="logoVIP letsgo"><img src="./img/logo/VIPS04.png" alt="1" class="vips01"></div></a></li>'
 }
 
 document.querySelector('.f_nikon').addEventListener('click', function () {
