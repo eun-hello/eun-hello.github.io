@@ -38,11 +38,11 @@ puzzle.addEventListener('mouseover', function () {
 // });
 
 glue.addEventListener('mouseover', function () {
-    glue.src = "./_img/_icon/glue-2.png"
+    glue.src = "./img/icon/glue-2.png"
     document.querySelector('.txttt03').classList.add('active')
 });
 glue.addEventListener('mouseout', function () {
-    glue.src = "./_img/_icon/glue-1.png"
+    glue.src = "./img/icon/glue-1.png"
     // document.querySelector('.txttt03').classList.remove('active')
 });
 
@@ -51,10 +51,10 @@ glue.addEventListener('mouseout', function () {
 const me = document.querySelector('.me')
 setInterval (
     function () {
-        if (me.src = './_img/_main/my-Design-2.png') {
-            setTimeout(function () {me.src = './_img/_main/my-Design-3.png'}, 500)    
+        if (me.src = './img/main/my-Design-2.png') {
+            setTimeout(function () {me.src = './img/main/my-Design-3.png'}, 500)    
         } else if (me.src = './_img/_main/my-Design-3.png') {
-            setTimeout(function () {me.src = './_img/_main/my-Design-2.png'}, 500) 
+            setTimeout(function () {me.src = './img/main/my-Design-2.png'}, 500) 
         }
     }, 1000)
 
