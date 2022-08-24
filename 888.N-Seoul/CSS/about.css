@@ -1,0 +1,118 @@
+@import url(./common.css);
+
+/* * {outline: 1px solid red;} */
+
+.color01 {color: #d67a27;}
+.color02 {color: #31429a;}
+
+/*-------------find--------------------------*/
+
+#find {width: 80%; margin: 0 auto;}
+.navii {text-align: end; margin-top: 5%; margin-right: 4%;}
+.navii img {width: 0.78vw; position: relative; transform: translateY(0.15vw);}
+.findTitle {
+    padding: 1% 0; width: 25%;
+    text-align: center; margin: 5% auto; font-size: 2.5rem; font-weight: bold;
+    border-bottom: 3px solid #2d459b;
+}
+
+/*---------------section01----------------------------*/
+
+#section01 > P {text-align: center;}
+
+#section01in {width: 20%; margin: 0 auto; display: flex; justify-content: space-between;}
+
+.logoBox {width: 40%;}
+.logoBox img {width: 100%;}
+
+.colorBox00 {
+    width: 42%; display: flex; flex-direction: column; justify-content:end;
+    position: relative; bottom: 0;
+}
+.colorTxt {width: 100%; height: 1.5vw; margin-bottom: 2%; font-size: 1.2rem;}
+
+.colorBox01 {display: flex; justify-content: space-between;}
+
+.colorBox04 {width: 3.5vw; height: 3.5vw; background-color: #d67a27;}
+.colorBox05 {width: 3.5vw; height: 3.5vw; background-color: #f0b71c;}
+
+.secton01TxtBox01 {padding: 2%; line-height: 1.9rem;}
+.secton01TxtBox02 {padding: 3%; line-height: 1.9rem;}
+
+/*----------------------SECTION02------------------------------------*/
+
+#section02 {background-color: rgb(220, 243, 255); text-align: center;}
+#section02in {width: 80%; margin: 0 auto; display: flex; justify-content: space-between;}
+#section02in .s02txtBox {width: 30%; margin: 5% 0;}
+.s02head {font-size: 2.5rem;}
+.s02txt {font-size: 1.1rem; font-weight: bold; padding: 1% 0 4%;}
+.s02ttxt {margin: 4% 0; line-height: 1.5rem;}
+
+/*----------------------SECTION03------------------------------------*/
+
+#section03 {width: 60%; margin: 0 auto;}
+.s03title {text-align: center; font-size: 1.4rem; margin: 4% 0;}
+.s03Box {display: flex;}
+.s03Boxin {width: 50%; display: flex; flex-direction: column;}
+
+.s03icon {margin: 3% 0; display: flex; align-items: center;}
+.s03icon div {width: 100%;} 
+.s03icon div P {margin-left: 3%;}
+.s03icon .s03txt {width: 97%; margin-left: 3%;}
+.s03icon .s03txt span {font-size: 1.5rem; margin-left: 1%;}
+
+/*----------------------SECTION04------------------------------------*/
+
+#section04 {margin: 5% 0;}
+.tower {width: 13%; margin: 0 auto;}
+.tower img {width: 100%;}
+.towerTxt01 {
+    text-align: center; font-size: 1.5rem; font-weight: bold;
+    margin-bottom: 10%;
+}
+.towerTxt01 > p {font-size: 2.4rem; padding: 4%;}
+.towerTxt {width: 30%; margin: 0 auto;}
+
+.towerTxt02 {display: flex; font-size: 1.3rem;}
+.towertt01 {width: 30%; text-align: center; font-size: 1.4rem; font-weight: bold;}
+.towertt02 {widows: 70%; padding-bottom: 5%;}
+
+.towerH {font-size: 1.4rem; font-weight: bold; display: flex; align-items: center;}
+.towerH P {font-size: 2.3rem; font-weight: bold; margin-left: 2%;}
+/* .towerhi {display: flex; flex-direction: column;} */
+
+.towerH01 {width: 30vw; position: relative; transform: translate(12vw, -33.5vw);}
+.towerH01 span {position: relative; transform: translate(-4.1vw, 1vw); font-size: 1.1rem;}
+.towerhi {margin-left: 1%;}
+.towerH02 {width: 30vw; position: relative; transform: translate(-11vw, -31.2vw);}
+.towerH03 {width: 30vw; position: relative; transform: translate(59vw, -31.5vw);} 
+.towerH04 {width: 30vw; position: relative; transform: translate(26vw, -31vw)}
+
+/*----------------------SECTION05------------------------------------*/
+
+#section05 > P {width: 100%; text-align: center; margin: 5% 0; font-size: 2rem; font-weight: bold;}
+
+.yearBox {width: 80%; height: 81vw; margin: 0 auto 4%; display: flex; justify-content: space-between;}
+.year {width: 48%;}
+
+.yearLine {
+    width: .15vw; height: inherit; background-color: #d67a27;
+    display: flex; flex-direction: column; align-items: center;
+}
+.yearPoint {width: .5vw; height: .5vw; border-radius: 50%; background-color: #d67a27;}
+.yearPoint:nth-child(1) {transform: translateY(-0.25vw);}
+.yearPoint:nth-child(2) {transform: translateY(26.25vw);}
+.yearPoint:nth-child(3) {transform: translateY(52.7vw);}
+
+.year {position: relative; transform: translateY(-1.5vw);}
+
+.yearin {width: 100%; height: 27vw;}
+.yearin P {font-size: 3rem; font-weight: 1000; color: #d67a27; margin-bottom: 5%;}
+
+.yeartxt {display: flex; justify-content: space-between;}
+.yeartxt01 {width: 15%; font-size: 1.4rem; font-weight: bold;}
+.yeartxt01 div {margin-top: 0.7vw; height: 1.3vw;}
+.yeartxt02 {width: 80%; font-size: 1rem;}
+.yeartxt02 div {margin-top: 0.7vw; height: 1.3vw; line-height: 2rem;}
+
+.yearleft {text-align: right;}
