@@ -128,7 +128,7 @@
 /*=-----------------VIPS LOGO---------------------------------*/
 
 .logoVIP{
-    background: url(../_img/_logo/VIPS02.png) no-repeat center/cover; background-color: #C60226;
+    background: url(../img/_logo/VIPS02.png) no-repeat center/cover; background-color: #C60226;
     width: 4vw; height: 4vw; border-radius: 50%; box-shadow: 1px 1px 20px #fff; 
     position: relative; margin: 0 auto;
 }
@@ -144,12 +144,12 @@
 /*-----------------------------roket-------------------------*/
 .hispacelogmanisbo {width: 100%; height: 10vw;}
 
-.roket {width: 6vw; height: 6vw; background: url(../_img/_logo/roket-1.png) no-repeat center/cover;}
+.roket {width: 6vw; height: 6vw; background: url(../img/_logo/roket-1.png) no-repeat center/cover;}
 .roket img {width: 100%; transition: 0.3s;}
 .roket:hover img {margin-top: -4vw; transition: 0.3s;}
 
 /*----------------------===puzzle--------------------------------*/
 
-.puzzle {width: 6vw; height: 6vw; background: url(../_img/_logo/puzzle-1.png) no-repeat center/cover;}
+.puzzle {width: 6vw; height: 6vw; background: url(../img/_logo/puzzle-1.png) no-repeat center/cover;}
 .puzzle img {width: 100%; transition: 0.3s; transform: translate(-3vw, -3vw);}
 .puzzle:hover img {transform: translate(0, 0); transition: 0.3s;}

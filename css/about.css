@@ -41,14 +41,14 @@
 
 /*-----------------------------roket-------------------------*/
 
-.roket {width: 7vw; height: 7vw; background: url(../_img/_logo/roket-1.png) no-repeat center/cover;}
+.roket {width: 7vw; height: 7vw; background: url(../img/_logo/roket-1.png) no-repeat center/cover;}
 .roket img {width: 100%; transition: 0.3s;}
 .roket.active img{position: relative; top: -7vw; transition: 0.5s;}
 .roket:hover img {position: relative; top: -7vw; transition: 0.5s;}
 
 /*----------------------===puzzle--------------------------------*/
 
-.puzzle {width: 7vw; height: 7vw; background: url(../_img/_logo/puzzle-1.png) no-repeat center/cover;}
+.puzzle {width: 7vw; height: 7vw; background: url(../img/_logo/puzzle-1.png) no-repeat center/cover;}
 .puzzle img {width: 100%; transition: 0.3s; transform: translate(-2vw, -2vw);}
 .puzzle.active img {width: 100%; transition: 0.3s; transform: translate(-2vw, -2vw);}
 .puzzle:hover img {transform: translate(0, 0); transition: 0.3s;}
