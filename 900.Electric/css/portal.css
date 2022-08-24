@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url(./core.css);
+@import url(./common.css);
+
+/* * {outline: 1px solid red;} */
+/* * {box-sizing: border-box;} */
+
+html {font-family: 'Noto Sans KR', sans-serif;}
+header {width: 100%; height: 105px; position: sticky; top: 0; z-index: 3;}
+.visiblity {visibility: hidden;}
+.color01 {color: #1D4167;}
+.space {width: 100%; height: 30px;}
+.space60 {width: 100%; height: 60px;}
+.space01 {width: 100%; height: 20px;}
+.space02 {width: 100%; height: 50px;}
+.colorRed {color: red;}
+
+/*==============================HEADER==========================================*/
+
+#navbarTop {width: 100%; height: 25px; background-color: #656565;}
+.navbarTop01 {
+    width: 1200px; margin: 0 auto; height: inherit;
+    display: flex; justify-content: flex-end; align-items: center;
+}
+.navbarTop01 > ul > li {
+    display: flex; flex-direction: row; align-items: center; 
+    color: #fff; font-size: 0.5rem; padding: 0 5px;
+}
+.navbarTop01 > ul > li > i {padding: 0 5px; font-size: 0.8rem;}
+.navbarTop01 > ul > li:hover {color: #A4C46C;}
+.navbarTop01 > ul > li:hover > i {color: #A4C46C;}
+
+#navbarMain {
+    width: 100%; height: 80px; background-color: rgb(255, 255, 255); overflow: hidden;
+    transition: 0.4s; border-bottom: 1px solid #333;
+}
+.navbarMain01 {width: 1200px; height: inherit; margin: 0 auto; display: flex;}
+.navbar_title {width: 15%; height: 80px;}
+.navbar_title01 {
+    width: 100%; height: inherit; font-size: 1.2rem; flex: auto 0 0;
+    display: flex; align-items: center; justify-content: center; font-weight: bold;
+}
+.navbar_title01 > img {margin: 10px;}
+.navbar_log {width: 85%; height: 80px;}
+.navbar_log > li {width: 20%; height: 50px; font-size: 1.3rem; font-weight: bold; margin-top: 30px; text-align: center; display: block;}
+.navbar_log > li:hover {border-bottom: 5px solid #1D4167;}
+.navbar_log > li:hover:last-child {background: none;}
+.navbar_log > li > ul {margin-top: 40px;}
+.navbar_log > li > ul > li {width: 100%; height: 20px; padding: 10px 0; font-size: 1rem; border-left: 1px solid #333;}
+.leftBo {border-right: 1px solid #333;}
+.navbar_log > li > ul > li:hover > a {color: #A4C46C;}
+
+.chargecolor {color: #A4C46C;}
+
+/*=====================================ARTICLE==========================================================*/
+
+#mainTop {
+    width: 100%; height: 700px; border-bottom: 1px solid #333; 
+    background: url(../img/MAINPAGE/elec.jpg) no-repeat center/cover;
+    display: flex; align-items: center;
+}
+.mainTop_art {width: 1200px; height: 220px; margin: auto auto; color: #fff;}
+.chargeBox {width: 85%; height: 10px; /* outline: 1px solid red; */ 
+    overflow: hidden; margin: 15px 0 30px 0; background-color: rgb(240, 240, 240);
+    border-radius: 2px;
+}
+.chargeIn {
+    position: relative; left: -170%;
+    width: 170%; height: 10px; background-color: #A4C46C;
+    animation: energe 4s linear infinite;
+}
+.chargeLine {width: 1px; height: 5px; background-color: #333;}
+@keyframes energe {
+    0% {transform: translateX(0);}
+    90% {transform: translate(85%);}
+    100% {transform: translate(85%);}
+}
+
+.mainTop_txt01 {font-size: 1.8rem; font-weight: bold; margin-left: 10px;}
+.mainTop_txt02 {font-size: 1.5rem; margin-left: 10px;}
+
+/*==============================================SECTION==========================================================*/
+
+section {width: 1200px; height: 580px; margin: 0 auto;}
+.iconTitle {width: 100%; height: 50px; color: #333; font-weight: bold; font-size: 1.7rem; display: flex; align-items: center; letter-spacing: 2px;}
+
+.mainiicon {display: flex; justify-content: space-between; width: 1200px; height: 110px; overflow: hidden;}
+.mainIconList {position: relative; display: flex; flex-direction: column; width: 110px; height: 220px;}
+.mainIconList img {width: 100%; height: 100%; padding: 0;}
+.mainIconList > a {width: 110px; height: 110px;}
+.mainIconList:hover {top: -110px;}
+.mainIconTxt {width: 1200px; height: 40px; display: flex; justify-content: space-between;}
+.mainIconTxt > div {width: 110px; height: 40px; text-align: center; font-size: 1rem;}
+.mainIconLIst {display: flex; align-items: center; justify-content: center;}
+
+#mainCar {width: 100%; height: 240px; overflow: hidden;}
+.mainCar_line {width: 100%; height: 2px; background-color: #333; margin-top: 20px;}
+.mainCarTxt {width: 600px; height: 240px; float: left; margin-left: 10px;}
+.mainCarTxtTitle {font-size: 1.8rem; font-weight: bold;}
+.mainCarTxtin {font-size: 1.2rem; line-height: 35px;}
+.mainCarimg {width: 600px; height: 240px; float: left;  margin-left: -10px;}
+.mainCarimg > img {height: 100%; margin-left: 50px;}
+#mainCar > .mainCarBox {
+    width: 100%; height: 252px; position: relative; top: 240px;
+    background-color: rgba(175, 202, 222, 0.2); transition: 0.8s; 
+}
+.mainCarBox > a > img {margin-left: 70%; margin-top: 1%; opacity: 0.7; position: relative; top: -240px;}
+#mainCar:hover > .mainCarBox {top: 0px; transition: 0.8s;} 
+
+/*==========================================TAB=======================================================*/
+
+.mainBg {width: 100%; height: 550px; background: rgba(239, 239, 239, 0.5);}
+#tabMenu {width: 1200px; margin: 0 auto;}
+
+.btnBox {width: 1200px; height: 80px; display: flex; overflow: hidden; align-items: center;}
+.box {
+    width: 400px; height: 85px; border: none; opacity: .3; font-size: 1rem; transition: 0.5s; color: #333;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+}
+.bot01.active {border-bottom: 5px solid black; opacity: 1; transition: 0.3s; color: #333;}
+.bot02.active {border-bottom: 5px solid black; opacity: 1; transition: 0.3s; color: #333;}
+.bot03.active {border-bottom: 5px solid black; opacity: 1; transition: 0.3s; color: #333;}
+.botfont {font-weight: bold; font-size: 1.4rem;}
+.botline {width: 250px; height: 2px; background-color: black; margin: 0 auto; margin-top: 5px; margin-bottom: 3px;}
+.buttonbox {width: 1200px; height: 300px; border: 1px solid #333; margin-top: 10px; position: relative; background-color: #fff; display: none;}
+.btncont {width: 1000px; height: 80px; margin-left: 20px; padding-top: 20px; line-height: 30px;}
+.btncont > a {text-decoration: none; color: #333; text-indent: 10px;}
+.botTitle01, .botfont01 {color: #1D4167;}
+.botTitle02, .botfont02 {color: #A4C46C;}
+.botTitle03, .botfont03 {color: #B2DBF4;}
+.botTxt {font-weight: bold; font-size: 1.3rem;}
+.botTitle {font-size: 1.1rem;}
+#buttonbox01.active {display: block;}
+#buttonbox02.active {display: block;}
+#buttonbox03.active {display: block;}
+
+/*======================================PHONE BOX=====================================================*/
+
+#phoneBox {width: 1200px; height: 520px; margin: 0 auto; color: #333;}
+.phoneInBox {width: inherit; height: 450px; display: flex; justify-content: space-between; align-items: center;}
+.phonecont01 {
+    width: 550px; height: 380px; border: 2px solid #1D4167; box-sizing: border-box;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.phonecont01:hover {outline: 3px solid #1D4167;}
+.phonecont01TITLE {width: 530px; height: 50px; font-size: 1.6rem; font-weight: bold; margin-left: 100px; margin-top: 20px;}
+.phonecontbox01 {width: 530px; height: 380px; display: flex; justify-content: space-around; margin-top: 20px;}
+.phonecontbox01 > img {width: 225px; height: 290px;}
+.phoneconttxt01 {width: 250px; height: 280px; font-size: 1rem;}
+.phoneconttxt01 > img {width: 80px; height: 80px; margin-left: 100px;}
+.phonett01 {font-size: 1.2rem; font-weight: bold; text-align: center;}
+.phonecont02 {
+    width: 625px; height: 380px; background-image: url(../img/EVCAR/img.jpg); background-size: 625px;
+}
+.phonecont02:hover {outline: 5px solid #1D4167;}
+.phonecont02TITLE {width: 480px; height: 50px; font-size: 1.7rem; position: relative; padding: 25px 0; font-weight: bold; margin: 0 auto;}
+.phonecontbox02 {width: 480px; height: 280px; display: flex; justify-content: space-between;}
+.phonecontbox02 > img {width: 100%; height: 100%;}
+.carimg {color: #fff;}
+
+/*====================================FOOTER===================================================================*/
+
+footer {
+    width: 100%; height: 250px;
+    background-color: #8e8e8e; border-top: 0.5px solid #999; color: #fff;
+}
+address {font-size: 0.7rem; font-style: normal; width: 1200px; line-height: 25px;}
+.fotMenu {width: 1200px; height: 260px; margin: 0 auto;}
+.fotMenu ul {margin: 0 auto;}
+.fot_main {width: 1200px; height: 170px; margin: 0 auto; border-top: 1px solid #999;}
+.fot_top > ul {display: flex; align-items: center;}
+.fot_top > ul > li:hover > a {color: #a4c46c;}
+.fot_space00 {width: 100%; height: 30px;}
+.fot_space01 {width: 100%; height: 10px;}
+.fot_space02 {width: 100%; height: 30px;}
+.fot_space03 {width: 100%; height: 30px;}
+.fot_color {color: rgb(76, 76, 76); font-weight: bold;}
+.fot_list {display: flex;}
+.fot_list > ul {display: flex; align-items: center;}
+.fot_list > ul > li {padding: 0 0.5rem;}
+.fot_list > ul > li > a {font-size: 1.7rem;}
+.fot_bot {width: 100%; height: 30px;}
+.fot_bot > ul {display: flex; flex-direction: row;}
+.fot_bot > ul > li {padding: 1rem 1rem; border-top: 1px solid #999}
+.fot_bot > ul > li:hover a {color: steelblue;}
+.fot_bot > ul > li:hover:nth-child(5) a {color: rgb(206, 75, 75); text-decoration: underline;}
+.fotIMG {width: 85px;}
+.fotLast {border-right: 1px solid #333;}

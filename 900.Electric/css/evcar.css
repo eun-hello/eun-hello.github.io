@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url(../css/core.css);
+@import url(./common.css);
+
+
+html {font-family: 'Noto Sans KR', sans-serif;}
+header {width: 100%; height: 105px; position: sticky; top: 0; z-index: 3;}
+.visiblity {visibility: hidden;}
+.color01 {color: #1D4167;}
+.space {width: 100%; height: 30px;}
+.space60 {width: 100%; height: 60px;}
+.space80 {width: 100%; height: 80px;}
+.space01 {width: 100%; height: 20px;}
+.space02 {width: 100%; height: 50px;}
+.center {display: flex; align-items: center; justify-content: center;}
+/*==============================HEADER==========================================*/
+
+#navbarTop {width: 100%; height: 25px; background-color: #656565;}
+.navbarTop01 {
+    width: 1200px; margin: 0 auto; height: inherit;
+    display: flex; justify-content: flex-end; align-items: center;
+}
+.navbarTop01 > ul > li {
+    display: flex; flex-direction: row; align-items: center; 
+    color: #fff; font-size: 0.8rem; padding: 0 5px;
+}
+.navbarTop01 > ul > li > i {padding: 0 5px; font-size: 0.8rem;}
+.navbarTop01 > ul > li:hover {color: #A4C46C;}
+.navbarTop01 > ul > li:hover > i {color: #A4C46C;}
+
+#navbarMain {
+    width: 100%; height: 80px; background-color: rgb(255, 255, 255); overflow: hidden;
+    transition: 0.4s; border-bottom: 1px solid #333;
+}
+.navbarMain01 {width: 1200px; height: inherit; margin: 0 auto; display: flex;}
+.navbar_title {width: 15%; height: 80px;}
+.navbar_title01 {
+    width: 100%; height: inherit; font-size: 1.2rem; flex: auto 0 0;
+    display: flex; align-items: center; justify-content: center; font-weight: bold;
+}
+.navbar_title01 > img {margin: 10px;}
+.navbar_log {width: 85%; height: 80px;}
+.navbar_log > li {width: 20%; height: 50px; font-size: 1.3rem; font-weight: bold; margin-top: 30px; text-align: center; display: block;}
+.navbar_log > li:hover {border-bottom: 5px solid #1D4167;}
+.navbar_log > li:hover:last-child {background: none;}
+.navbar_log > li > ul {margin-top: 40px;}
+.navbar_log > li > ul > li {width: 100%; height: 20px; padding: 10px 0; font-size: 1rem; border-left: 1px solid #333;}
+.leftBo {border-right: 1px solid #333;}
+.navbar_log > li > ul > li:hover > a {color: #A4C46C;}
+
+.chargecolor {color: #A4C46C;}
+
+/*=========================================NAVI============================================================*/
+.evev {background-color: #A4C46C; color: #fff;}
+
+.hdimg {
+    width: 100%; height: 250px; /* background: url(../03IMG/MAINPAGE/x6BkEE.gif) no-repeat center/cover; */ background-color: rgb(0, 0, 0);
+    background: url(../img/MAINPAGE/gif.gif) no-repeat center/cover;
+    opacity: 0.8; border-bottom: 1px solid #333;
+}
+.hdimg > p {font-size: 2.5rem; color: #fff; font-weight: bold;}
+
+.navi {width: 100%; height: 40px; background-color: rgb(255, 255, 255); border-bottom: 1px solid #333; position: sticky; top: 105px;}
+.naviin {width: 1200px; height: inherit; margin: 0 auto; display: flex;} 
+.naviin > li {width: 600px; height: inherit; display: flex; align-items: center; justify-content: center;}
+.naviin > li > a {font-size: 1.2rem;}
+
+#toptitleBox {width: 1200px; margin: 0 auto;}
+.cartitle {width: 100%; height: 70px; margin: 0 auto; display: flex; align-items: center;}
+.cartitle > P {font-size: 2rem; font-weight: bold;} 
+.cartitle > div {padding: 0 2%; font-size: 0.9rem; margin-top: 20px;}
+.mainLine {width: 100%; height: 2px; background-color: #555; border-radius: 5px;}
+.arttitle {width: 1200px; height: 60px; margin: 0 auto; display: flex;}
+.arttitle > li {width: 300px; height: 40px; margin: 1% 0; display: flex; align-items: center; justify-content: center;}
+.arttitle > li > a {font-size: 1.2rem;}
+
+
+/*=====================================BUTTON============================================*/
+
+.Btn00 {transition: all 0.4s;}
+
+.Btn01.active {background-color: #1D4167; color: #fff;}
+.Btn02.active {background-color: #1D4167; color: #fff;}
+.Btn03.active {background-color: #1D4167; color: #fff;}
+.Btn04.active {background-color: #1D4167; color: #fff;}
+
+#maincontBox01 {display: none;}
+#maincontBox02 {display: none;}
+#maincontBox03 {display: none;}
+#maincontBox04 {display: none;}
+
+#maincontBox01.active {display: block;}
+#maincontBox02.active {display: block;}
+#maincontBox03.active {display: block;}
+#maincontBox04.active {display: block;}
+
+/*==========================================ARTICLE01=============================================================*/
+.contentBox {width: 1200px; margin: 0 auto;}
+
+#maincontBox01 {width: 1200px; margin: 0 auto;}
+.contentTxt {width: 100%; /*height: 1200px;  outline: 1px solid #1D4167; */}
+.contTITLE {width: 100%; margin: 0 auto; border-left: 8px solid #1D4167; align-items: center;}
+.contTITLE p {margin-left: 15px; font-size: 1.7rem; font-weight: bold;}
+.TTTxt {font-size: 1.2em; padding: 10px 0; color: #333;}
+.TTTxta {font-size: 1.3em; padding: 10px 0; color: #555;}
+
+
+.contBox01in {display: flex;}
+.contBox01in > img {height: 400px;}
+.contBox01in > div {margin-top: 50px; margin-left: 10px; font-size: 1.2rem; color: #555;}
+
+.contBox02in {display: flex; justify-content: space-between;}
+.contBox02in > div {width: 40%; color: #555; font-size: 1.2rem;}
+.contBox02in > div > p {margin-top: 10px; margin-bottom: 5px; font-size: 1.2rem;}
+.contBox02in img {width: 55%;}
+.contsubt {font-size: 1.2rem; color: #333; margin-left: 10px;}
+.contsubb {font-size: 0.8rem;}
+
+.contBox03ititle {width: 100%; height: 50px; text-align: center; background-color: #A4C46C; font-size: 1.5rem; font-weight: bold;}
+.contBox03i {display: flex; justify-content: space-between;}
+.contBox03ii {width: 24%; height: 200px; border-left: 1px solid #1D4167; margin-top: 30px; padding: 0 10px; font-size: 1.2rem; color: #555;}
+.contBox03ii:nth-child(1) {border: none;}
+.contBox03ii > P {font-size: 1.3rem; color: #1D4167; font-weight: bold;}
+
+.contBox03Txt > p {font-size: 1.5rem; color: #1D4167;}
+.contBox03Txt {font-size: 1.3rem;}
+.contBoxV {margin-left: 15px; color: #555; font-size: 1.2rem;}
+.contBoxV {padding-bottom: 20px;}
+
+.contBox04txt {margin-left: 10px;}
+.contBox04in {
+    width: 1200px; height: 500px; margin: 0 auto; background: url(../img/EVCAR/electric04.png) no-repeat center/cover;
+    font-size: 1.2rem; color: #555;
+}
+.contBox04in > p {font-size: 1.3rem; color: #1D4167; padding: 5px 2px 0 0;}
+
+/*==========================================ARTICLE02=============================================================*/
+
+.TTTxta {width: 37%; font-size: 1.3em; padding: 10px 0; color: #555;}
+.TTTxt {margin: 0 10px;}
+.contBox05in {display: flex; justify-content: space-between;}
+.contBox05in > img {width: 60%;}
+
+.contBox06 {display: flex;}
+
+.contBox07in {display: flex;}
+.contBox07in > p {
+    width: 50%; height: inherit; padding: 10px; font-size: 1.2rem;
+    border-left: 8px solid #333;
+}
+/*==========================================ARTICLE03=============================================================*/
+.contBox09 > img {width: 100%;}
+.contBox10 > img {width: 100%;}
+
+.contBox13 > img {width: 100%;}
+
+/*=======================================FOOTER===================================================================*/
+
+footer {
+    width: 100%; height: 250px;
+    background-color: #8e8e8e; border-top: 0.5px solid #999; color: #fff;
+}
+address {font-size: 0.7rem; font-style: normal; width: 1200px; line-height: 25px;}
+.fotMenu {width: 1200px; height: 260px; margin: 0 auto;}
+.fotMenu ul {margin: 0 auto;}
+.fot_main {width: 1200px; height: 170px; margin: 0 auto; border-top: 1px solid #999;}
+.fot_top > ul {display: flex; align-items: center;}
+.fot_top > ul > li:hover > a {color: #a4c46c;}
+.fot_space00 {width: 100%; height: 30px;}
+.fot_space01 {width: 100%; height: 10px;}
+.fot_space02 {width: 100%; height: 30px;}
+.fot_space03 {width: 100%; height: 30px;}
+.fot_color {color: rgb(76, 76, 76); font-weight: bold;}
+.fot_list {display: flex;}
+.fot_list > ul {display: flex; align-items: center;}
+.fot_list > ul > li {padding: 0 0.5rem;}
+.fot_list > ul > li > a {font-size: 1.7rem;}
+.fot_bot {width: 100%; height: 30px;}
+.fot_bot > ul {display: flex; flex-direction: row;}
+.fot_bot > ul > li {padding: 1rem 1rem; border-top: 1px solid #999}
+.fot_bot > ul > li:hover a {color: steelblue;}
+.fot_bot > ul > li:hover:nth-child(5) a {color: rgb(206, 75, 75); text-decoration: underline;}
+.fotIMG {width: 85px;}
+.fotLast {border-right: 1px solid #333;}

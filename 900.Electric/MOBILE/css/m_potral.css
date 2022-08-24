@@ -1,0 +1,95 @@
+@import url(../../css/core.css);
+
+/* * {outline: 1px solid red;} */
+
+body,html {width: 800px; height: 965px; margin: 0 auto;}
+.space20 {width: 100%; height: 20px;  /* border-bottom: 3px solid #1D4167; */}
+
+#head {background-color: #1D4167; color: #fff; display: flex; justify-content: space-between; align-items: center; font-size: 1.2rem;}
+.menu {margin-left: 20px;}
+.logo img {width: 50px;}
+.sidebox {width: 50px ; display: flex; justify-content: space-between;}
+
+/*============================sidemenu==========================================*/
+
+#sidemenu {width: 800px; height: 779px; background-color: #1D4167; display: none; position: absolute; z-index: 5; border-bottom: 2px solid #333;}
+#sidemenu.active {display: block;}
+#sidemenu ul {width: 100%; color: #fff; display: flex; flex-direction: column; margin-top: 15px;}
+#sidemenu ul li {width: 100%; height: 70px; display: flex; align-items: center; justify-content: center;}
+#sidemenu ul li:hover {background-color: #B2DBF4;}
+#sidemenu ul li a {font-size: 1.3rem;}
+
+/*==================================sidebtn==========================================*/
+
+.sidebtn {
+    width: 50px; height: 50px; border-radius: 50%; background-color: #B2DBF4;
+    margin: 5px 0; border: 1px solid #444;
+}
+#sidebutton {position: relative; left: 720px; top: -220px;}
+
+.sidebtn {visibility: hidden;}
+.sidebtn.active {visibility: visible;}
+
+.sidebtn04 {visibility: visible; color: #fff; display: flex; align-items: center; justify-content: center;}
+.sidebtn01 {display: flex; align-items: center; justify-content: center; color: #fff;}
+.sidebtn02 {display: flex; align-items: center; justify-content: center;}
+.sidebtn02 img {width: 20px;}
+.sidebtn03 {display: flex; align-items: center; justify-content: center;}
+.sidebtn03 img {width: 30px;}
+#foticon01 {display: none; /* font-size: 1.1rem; */}
+#foticon01.active {display: block;}
+/* .foticon02 {font-size: 1.1rem;} */
+#foticon02.active {display: none;}
+
+/*===================================icon=======================================*/
+
+#imgtop {width: 100%; height: 270px;}
+#imgtop img {width: 100%; border-bottom: 3px solid #1D4167;}
+.imgtoptext {position: relative; top: -80px; color: #fff; font-weight: bold; font-size: 1.3rem; margin-left: 10px;}
+
+#iconbox {width: 800px; height: 80px; overflow: hidden;}
+#iconbox ul {display: flex; justify-content: space-between;}
+#iconbox li {width: 133px; display: flex; flex-direction: column;}
+.icon01 li:hover {margin-top: -80px;}
+#iconbox li a {display: flex; align-items: center; justify-content: center;}
+#iconbox img {width: 80px;}
+
+/*===================================artical01=======================================*/
+
+#contbox01 img {width: 100%;}
+
+.btnBox {width: 800px; height: 80px; display: flex; overflow: hidden;}
+.box {width: 266.5px; height: 85px; border: none; opacity: .3; font-size: 1rem; transition: 0.5s; color: #333; /* background-color: rgb(246, 248, 245); */}
+.bot01.active {border-bottom: 5px solid black; opacity: 1; transition: 0.3s; color: #333;}
+.bot02.active {border-bottom: 5px solid black; opacity: 1; transition: 0.3s; color: #333;}
+.bot03.active {border-bottom: 5px solid black; opacity: 1; transition: 0.3s; color: #333;}
+.botfont {font-weight: bold; font-size: 1.4rem;}
+.botline {width: 250px; height: 2px; background-color: black; margin: 0 auto; margin-top: 5px; margin-bottom: 3px;}
+.buttonbox {width: 800px; height: 300px;/*  border: 1px solid #333; */ margin-top: 10px; position: relative; background-color: rgb(246, 248, 245); display: none;}
+.btncont {width: 800px; height: 80px; margin-left: 20px; padding-top: 20px; line-height: 30px;}
+.btncont > a {text-decoration: none; color: #333; text-indent: 10px;}
+.botTitle01, .botfont01 {color: #1D4167;}
+.botTitle02, .botfont02 {color: #A4C46C;}
+.botTitle03, .botfont03 {color: #B2DBF4;}
+.botTxt {font-weight: bold; font-size: 0.9rem;}
+.botTitle {font-size: 1rem;}
+#buttonbox01.active {display: block;}
+#buttonbox02.active {display: block;}
+#buttonbox03.active {display: block;}
+
+/*===================================artical02=======================================*/
+#contbox02 {width: 100%; height: 200px; background-color: #eee;}
+/*===================================footer=================================*/
+
+footer {width: 800px; height:130px; background-color: #c6c6c6;}
+address {font-style: normal; margin: 0 auto; display: flex; flex-direction: column; align-items: center;}
+address img {width: 25px;}
+
+
+.footbot {display: flex; flex-direction: column; align-items: center;}
+.footbot P {color: #fff;}
+.foottop li {width: 110px; margin: 0 5px; background-color: #fff; border-radius: 5px; margin-top: 10px; display: flex; align-items: center; justify-content: center;}
+.foottop a {font-weight: bold;}
+.foottxt {margin-top: 15px;}
+.foottxt li {padding: 2px 10px; margin: 0 5px; border-radius: 5px; background-color: rgb(77, 77, 77); color: #fff;}
+.foottxt li:hover {background-color: #1D4167; color: #fff;}
