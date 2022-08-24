@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/logo.css">
+    <style>
+        .color01 {color: #1D4167;}
+        .color02 {color: #fee600;}
+        .color03 {color: #C60226;}
+
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          height: 70vh;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+        .swiper-slide {display: flex; flex-direction: column; align-items: center; justify-content: center;}
+        .swiper-slide p {font-size: 2rem; font-weight: bold;}
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+/*           height: 100%; */
+          object-fit: cover;
+        }
+        .swiper-button-next {color: #fff; margin-top: 2vw;}
+        .swiper-button-prev {color: #fff; margin-top: 2vw;}
+        .swiper-pagination-bullet {width: 2vw; height: 2vw;}
+        .swiper-pagination-bullet:nth-child(1) {background-color: #000;}
+        .swiper-pagination-bullet:nth-child(2) {background-color: #1D4167;}
+        .swiper-pagination-bullet:nth-child(3) {background-color: #fee600;}
+        .swiper-pagination-bullet:nth-child(4) {background-color: #C60226;}
+      </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <p>ABOUT</p>
+                <div class="logo">
+                    <div class="logoBox logoBox01"></div>
+                    <div class="logoBox logoBox02"></div>
+                    <div class="logoBox logoBox03"></div>
+                    <div class="logoBox logoBox04"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <p class="color01">무공해차 통합 누리집</p>
+                <img src="./img/_main/elec03.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <p class="color02">Nikcon</p>
+                <img src="./img/_main/background.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <p class="color03">VIPS</p>
+                <img src="./img/_main/main031.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+  
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+});
+</script>
+</body>
+</html>
