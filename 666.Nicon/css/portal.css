@@ -1,0 +1,216 @@
+@import url(./common.css);
+@import url(./core.css);
+
+/* * {outline: 1px solid red;} */
+
+body {height: auto;}
+
+.colorY {color: #fee600;}
+.color01 {color: #fee600;}
+.color02 {color: #e7c3a2;}
+
+#header {
+    z-index: 50;
+    width: 95%; height: 7vw; padding-left: 5%; position: sticky; top: 0; background-color: rgb(254, 254, 254);
+    display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgb(225, 225, 225);
+} 
+.headericon {display: flex; align-items: center;}
+.headericon a > img {width: 5vw;}
+.headericon > ul {display: flex; flex-direction: column; margin-left: 1vw;}
+.headericon > ul li {display: flex; padding: 0.3vh 0;}
+.headericon i {font-size: 1rem;}
+.log {color: #555;}
+
+/*========================================navbar====================================================*/
+
+#navbar {margin-top: 5vh; font-size: 1.2rem;}
+#navbar > li a {width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+#navbar > li {width: 10vw; height: 4vh; box-sizing: border-box;}
+#navbar > li:hover {border-bottom: 4px solid #fee600;}
+#navbar > li:last-child:hover {border-bottom: none; transform: scale(110%);}
+#navbar > li div {display: none;}
+#navbar > li:hover div {display: block;}
+
+.navbarcont01 {position: relative; width: 25vw; left: -1vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont02 {position: relative; width: 50vw; left: -10vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;;}
+.navbarcont03 {position: relative; width: 45vw; left: -10vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont04 {position: relative; width: 49vw; height: 30vh; left: -30vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont05 {
+    position: relative; width: 50vw; height: 40vh; left: -20vw; top: 4px; 
+    border: 1px solid rgb(225, 225, 225);/*  background-color: #fff; */
+    background: url(../img/menu/CLUB/clubN.jpg) no-repeat center/cover;
+}
+
+
+#iconmenu {display: flex; font-size: 1vw;}
+#iconmenu {width: 25vw;}
+#iconmenu ul {display: flex; align-items: center; padding-top: 2vh;}
+#iconmenu ul li {margin-left: 1vw; text-align: center; font-size: 0.8rem;}
+#iconmenu ul li:hover {color: #e7c3a2;}
+#iconmenu img {width: 5vw;}
+#iconmenu a {padding-bottom: 1vh;}
+.navcontbot {margin-bottom: 15px;}
+
+/*=================================Eshop=======================================*/
+
+.navbarcont02 ul {width: 50vw; display: flex; justify-content: space-around; padding-top: 2vh; align-items: center;}
+.navbarcont02 .imgbox {width: 10vw; height: 10vw; border-radius: 50%;}
+.navtextbox {width: 10vw; text-align: center; margin-bottom: 15px; font-size: 1rem;}
+.imgbox {overflow: hidden; outline: 8px solid #fff;}
+.navbarcont02 .imgbox:hover {outline: 8px solid #fee600; transition: 0.4s;}
+.navbarcont02 img {height: 12vw; transition: all 0.3s; }
+.imgbox:hover img {height: 10vw;}
+
+/*=================================event=======================================*/
+
+.navbarcont03title {display: flex !important; padding-top: 2vh; font-size: 1.2rem; font-weight: bold; }
+.navbarcont03box {display: flex !important; flex-direction: row; justify-content: space-around; margin-bottom: 15px;}
+.navbarcont03box div {width: 20vw; margin-top: 1vh; }
+.navbarcont03box img {width: 100%; /* border: 8px solid #888; */border-radius: 15px;}
+.navbarcont03box img:hover {border: 0.3vw solid #fee600; box-sizing: border-box; transition: 0.3s;}
+.navbarcont03title > a {width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+
+/*================================CLUB:N============================================*/
+
+.navbarcont05 > ul {
+    display: flex; 
+    position: relative; top: 15vh; left: 2vw;
+}
+.navbarcont05 li {
+    width: 10vw; height: 10vw; color: #fff; border-radius: 50%; outline: 5px solid #e7c3a2;
+    margin: 2%; background-color: rgba(51, 51, 51, 0.4);
+}
+.navbarcont05 li:hover {background-color: rgba(51, 51, 51, 0.8); color: #fee600;}
+.navbarcont05 {font-size: 1.1rem;}
+.navbarcont05 p {position: relative; left: 0;}
+
+/*============================niconschool====================================*/
+
+#navbarcont04 {background: url(../img/menu/CLUB/banner_file125.png) no-repeat center/cover;}
+#navbarcont04 .schoolbtn {display: flex; flex-direction: row; position: relative; left: 17vw; top: 3vh;}
+#navbarcont04 .schoolbtn li {width: 5vw; height: 5vw;/*  background-color: #fff; */ margin: 8px; border-radius: 50%; border: 0.3vw solid #fee600;}
+#navbarcont04 .schoolbtn li:hover {background-color: #dbdbdb80;}
+#navbarcont04 .schoolbtn a {color: #fff; font-size: 1rem;/*  font-weight: bold; */}
+#navbarcont04 img {width: 49vw;}
+
+/*=============================main==========================================*/
+
+.headimg {width: 100%;}
+.headimg img {width: 100%;}
+
+/*=============================Section01 ===============================*/
+
+#section01 {width: 90%; margin: 0 5%; margin-top: 5%; margin-bottom: 2%; display: flex;}
+iframe {width: 50vw; height: 28.1vw;}
+#section01 div {margin: 0 0 2vw 2vw; transition: 0.8s;}
+.section01txtTitle {font-size: 1.4rem;} 
+.section01txtTitle:hover {color: #fee600;}
+
+/*=============================Section02 ===============================*/
+
+#section02 {width: 90%; margin: 0 5% 5% 5%;}
+.shoptitle {width: 100%; font-size: 2rem; padding: 40px 0;}
+.shoptitle > span {font-size: 2rem; font-weight: bold;}
+.shopList {width: 100%; display: flex;}
+
+.shop_section { height: 25vw;}
+.shopsec01 {width: 55%; transition: 0.8s;  margin-top: 7vw;}
+.shopsec02 {width: 40%; transition: 1s;  margin-top: 7vw; margin-left: 5vw;}
+.shop_list01 {width: 50%; height: 50%; transition: 0.8s; float: left;}
+.shop_list01 p {width: 50%; float: left;}
+.shop_list01 img {width: 100%;}
+.shop_list02 {width: 100%; height: 33.3333%; transition: 0.8s;}
+.shopbtne {display: flex;}
+.shoppingbox {width: 50%; height: 100%;}
+.shopline {width: 130%; height: 2px; background-color: #333;}
+
+
+.shopBox05 {height: 66.66666%;;}
+.shopBox05 img {width: 100%;}
+.shopBox07 {background-color: #444; color: #fff; display: flex; align-items: center; justify-content: center;}
+.shopBox07 a {font-size: 2rem; text-align: center;}
+.shopBox07 span {font-size: 0.8rem;}
+.shopBox07:hover .chat {transform: scale(120%);}
+.shopBox08 {background-color: #fee600; display: flex; align-items: center; justify-content: center;}
+.shopBox08:hover {background-color: #e7c3a2;}
+.shopBox08:hover .more {margin-left: 3.5vw; transition: 0.2s;}
+.shopBox08 > a {margin-left: -5vw;}
+.shopBox08 p {font-size: 1.5rem; padding: 5% 0;}
+.shopBox08 span {padding: 2%; display: block;}
+.shopbb {margin-top: -0.5vw;}
+
+/*=============================Section03 ===============================*/
+
+#section03 {width: 100%; height: 38vw; margin-bottom: 5%; background-color: #efefef;}
+.secBigmama {width: 90%; padding-top: 2vw; margin: 0 auto; display: flex; justify-content: space-between;}
+.Ebox {width: 30%;}
+.Ebox img {width: 100%;}
+.Ebox img:hover {transform: scale(105%); transition: 0.2s;} 
+
+.Nititle {padding-left: 5%; width: 95%; margin-top: -3vw;}
+
+/*=============================Section04 ===============================*/
+
+#section04 {width: 90%; /* height: 15vw; */ margin: 0 5% 5%; display: flex; justify-content: space-between;}
+.sitewrap {width: 47%; /* height: 15vw; */ display: flex; justify-content: space-between;}
+.siteM {width: 44%; height: inherit; background-color: #e7c3a2; margin-bottom: 5%;}
+.siteM:hover {background-color: #fee50075;}  
+.siteMtext h4 {width: 92%; margin: 0 auto;}
+.siteMtext P {width: 92%; margin: 0 auto; padding: 3% 0; font-size: 0.9rem;}
+#section04 img {width: 100%;}
+
+/*===============================MEDIA SCREEN=============================================*/
+
+@media screen and (min-width : 2000px) {
+    html,body {font-size: 20px;}
+}
+
+@media screen and  (min-width : 1260px) and (max-width : 1400px){
+    html,body {font-size: 14px;}
+    #header {height: 10vw;}
+    .navbarcont05 li {width: 12vw; height: 12vw;}
+}
+@media screen and  (min-width : 1025px) and (max-width : 1259px){
+    html,body {font-size: 12px;}
+    #header {height: 10vw;}
+    #section01 {padding: 0;}
+    .navbarcont05 li {width: 12vw; height: 12vw;}
+}
+@media screen and  (min-width : 801px) and (max-width : 1024px){
+    html,body {font-size: 10px;}
+    #header {height: 12vw;}
+    #section01 {padding: 0;}
+    #section02 {margin: 0; padding-bottom: 5%; width: 100%;}
+    .navbarcont05 li {width: 12vw; height: 12vw;}
+}
+@media screen and (max-width : 800px){
+    html,body {font-size: 12px;}
+    #header {display: none;}
+    #headermoblie {display: block;}
+    #sideSNS {top: 60vh;}
+    #section01 {margin: 0; width: 100%;}
+    #sideSNS {display: none;}
+    #iconbot {display: flex; background-color: #f2f2f2;}
+
+    #section02 {margin: 0; padding-bottom: 5%; width: 100%;}
+    .shopList {display: flex; flex-direction: column;}
+    .shop_section {width: 100%; height: 50vw;}
+    .shopsec02 {margin-left: 0;}
+    .shopbb {margin-top: 0;}
+/*     .mone {padding-left: 5%;} */
+    #section04 {
+        flex-direction: column; justify-content: space-between; /* height: 75vw; */
+        width: 100%; margin: 0;
+    }
+    .sitewrap {width: 100%;/*  height: 30vw; */}
+    .siteM {width: 48%;}
+}
+@media screen and (max-width : 560px){ 
+    #section01 {flex-direction: column;}
+    #section01 iframe {width: 100%; height: auto;}
+    #section01 P {margin-top: 3%;}
+}
+
+
+
+

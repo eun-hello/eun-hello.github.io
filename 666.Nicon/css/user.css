@@ -1,0 +1,196 @@
+@import url(./common.css);
+@import url(./core.css);
+
+/* * {outline: 1px solid red;} */
+
+body {height: auto;}
+.colorY {color: #fee600;}
+.color01 {color: #fee600;}
+.color02 {color: #e7c3a2;}
+.color03 {color: #fff16b;}
+.color04 {color: #ffd845;}
+
+#header {
+    z-index: 50;
+    width: 95%; height: 7vw; padding-left: 5%; position: sticky; top: 0; background-color: rgb(254, 254, 254);
+    display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgb(225, 225, 225);
+} 
+.headericon {display: flex; align-items: center;}
+.headericon a > img {width: 5vw;}
+.headericon > ul {display: flex; flex-direction: column; margin-left: 1vw;}
+.headericon > ul li {display: flex; padding: 0.3vh 0;}
+.headericon i {font-size: 1rem;}
+.log {color: #555;}
+
+/*========================================navbar====================================================*/
+
+#navbar {margin-top: 5vh; font-size: 1.2rem;}
+#navbar > li a {width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+#navbar > li {width: 10vw; height: 4vh; box-sizing: border-box;}
+#navbar > li:hover {border-bottom: 4px solid #fee600;}
+#navbar > li:last-child:hover {border-bottom: none; transform: scale(110%);}
+#navbar > li div {display: none;}
+#navbar > li:hover div {display: block;}
+
+.navbarcont01 {position: relative; width: 25vw; left: -1vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont02 {position: relative; width: 50vw; left: -10vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;;}
+.navbarcont03 {position: relative; width: 45vw; left: -10vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont04 {position: relative; width: 49vw; height: 30vh; left: -30vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont05 {
+    position: relative; width: 50vw; height: 40vh; left: -20vw; top: 4px; 
+    border: 1px solid rgb(225, 225, 225);
+    background: url(../img/menu/CLUB/clubN.jpg) no-repeat center/cover;
+}
+
+#iconmenu {display: flex; font-size: 1vw;}
+#iconmenu {width: 25vw;}
+#iconmenu ul {display: flex; align-items: center; padding-top: 2vh;}
+#iconmenu ul li {margin-left: 1vw; text-align: center; font-size: 0.8rem;}
+#iconmenu ul li:hover {color: #e7c3a2;}
+#iconmenu img {width: 5vw;}
+#iconmenu a {padding-bottom: 1vh;}
+.navcontbot {margin-bottom: 15px;}
+
+/*=================================Eshop=======================================*/
+
+.navbarcont02 ul {width: 50vw; display: flex; justify-content: space-around; padding-top: 2vh; align-items: center;}
+.navbarcont02 .imgbox {width: 10vw; height: 10vw; border-radius: 50%;}
+.navtextbox {width: 10vw; text-align: center; margin-bottom: 15px; font-size: 1rem;}
+.imgbox {overflow: hidden; outline: 8px solid #fff;}
+.navbarcont02 .imgbox:hover {outline: 8px solid #fee600; transition: 0.4s;}
+.navbarcont02 img {height: 12vw; transition: all 0.3s;}
+.imgbox:hover img {height: 10vw;}
+
+/*=================================event=======================================*/
+
+.navbarcont03title {display: flex !important; padding-top: 2vh; font-size: 1.2rem; font-weight: bold; }
+.navbarcont03box {display: flex !important; flex-direction: row; justify-content: space-around; margin-bottom: 15px;}
+.navbarcont03box div {width: 20vw; margin-top: 1vh; }
+.navbarcont03box img {width: 100%; border-radius: 15px;}
+.navbarcont03box img:hover {border: 0.3vw solid #fee600; box-sizing: border-box; transition: 0.3s;}
+.navbarcont03title > a {width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+
+/*================================CLUB:N============================================*/
+
+.navbarcont05 > ul {
+    display: flex; 
+    position: relative; top: 15vh; left: 2vw;
+}
+.navbarcont05 li {
+    width: 10vw; height: 10vw; color: #fff; border-radius: 50%; outline: 5px solid #e7c3a2;
+    margin: 2%; background-color: rgba(51, 51, 51, 0.4);
+}
+.navbarcont05 li:hover {background-color: rgba(51, 51, 51, 0.8); color: #fee600;}
+.navbarcont05 {font-size: 1.1rem;}
+.navbarcont05 p {position: relative; left: 0;}
+
+/*============================niconschool====================================*/
+
+#navbarcont04 {background: url(../img/menu/CLUB/banner_file125.png) no-repeat center/cover;}
+#navbarcont04 .schoolbtn {display: flex; flex-direction: row; position: relative; left: 17vw; top: 3vh;}
+#navbarcont04 .schoolbtn li {width: 5vw; height: 5vw; margin: 8px; border-radius: 50%; border: 0.3vw solid #fee600;}
+#navbarcont04 .schoolbtn li:hover {background-color: #dbdbdb80;}
+#navbarcont04 .schoolbtn a {color: #fff; font-size: 1rem;}
+#navbarcont04 img {width: 49vw;}
+
+/*=============================main==========================================*/
+
+.headimg {width: 100%;}
+.headimg img {width: 100%;}
+
+/*=============================section01==========================================*/
+#section01 {width: 90%; margin: 0 auto; display: flex;}
+
+.pro {width: 30%; height: auto; border-right: 1px solid #fee600; padding-top: 3%; border-top: none;}
+.info {width: 70%; height: auto; padding-top: 3%;}
+
+.prologo {
+    width: 100%; height: 20%; display: flex; align-items: center;
+    font-size: 1.5rem;
+}
+.prologo img {width: 1.5rem; padding-right: 2%;}
+.profile {width: 100%; margin: 5% 0;}
+.profile img {width: 50%; margin: 0 25%;}
+.profile P {width: 100%; text-align: center; font-size: 1.2rem; line-height: 2rem; margin-top: 2%;}
+.profile P span {font-size: 1.4rem; font-weight: bold;}
+
+.pro02 {width: 80%; margin: 0 10%; border-bottom: 1px solid #999; padding-bottom: 20%;}
+.pro02txt {font-size: 1.6rem; margin: 3%;}
+.pro02txt:first-child {margin-top: 20%; border-bottom: 3px solid #000; box-sizing: border-box;}
+.pro02txt a {padding: 2% 0;}
+
+.pro03 {width: 80%; margin: 0 10%; padding: 5% 0 10%;}
+.pro03 > div {display: flex;}
+.pro03 > div div {padding: 2%; height: 1.5rem; font-size: 0.9rem; line-height: 1rem;}
+
+.pro04 {display: none;}
+
+.info01 {width: 80%; margin: 0 auto;}
+
+.infoTop {
+    width: 100%; background: linear-gradient(90deg, rgba(255,241,107,1) 0%, rgba(255,216,69,1) 100%);
+    border-radius: 10px 10px 0 0; text-align: center; padding: 1.5% 0; font-size: 1.3rem;
+}
+.infoBot {width: 100%; border: 1px solid #efefef; box-sizing: border-box;}
+.infotxt {padding: 3% 0; margin: 0 2%; border-bottom: 1px solid #efefef; display: flex; align-items: center;}
+.infotxt:last-child {border-bottom: none;}
+.infotxt p {margin-left: 2%; font-size: 1rem;}
+.infotxt i {color: #777; font-size: 1rem;}
+
+.info02 {width: 80%; margin: 5% auto 5%;}
+.infoBot02 {width: auto; display: flex;}
+.infoitem {
+    width: 25%; border: 1px solid #efefef; box-sizing: border-box;display: flex; align-items: center; justify-content: center;
+    background-color: #d1d1d1; font-size: 2rem; cursor: pointer;
+}
+.infoitem img {width: 100%;}
+.infoitem:hover {opacity: 0.5;}
+
+.infoii {background: linear-gradient(90deg, rgba(255,241,107,1) 0%, rgba(231,195,162,1) 100%);}
+
+#m_navi {width: 100%; display: none; border-bottom: 1px solid #efefef;}
+#m_navi ul {width: 90%; height: auto; margin: 0 auto; display: flex; flex-direction: row;}
+.naviList {width: 25%; padding: 2% 0 1%; text-align: center; font-size: 1rem; font-weight: bold;}
+
+/*===============================MEDIA SCREEN=============================================*/
+
+@media screen and (min-width : 2000px) {
+    html,body {font-size: 20px;}
+}
+@media screen and  (min-width : 1260px) and (max-width : 1400px){
+    html,body {font-size: 14px;}
+    #header {height: 10vw;}
+}
+@media screen and  (min-width : 1025px) and (max-width : 1259px){
+    html,body {font-size: 12px;}
+    #header {height: 10vw;}
+}
+@media screen and  (min-width : 801px) and (max-width : 1024px){
+    html,body {font-size: 10px;}
+}
+@media screen and (max-width : 800px){
+    html,body {font-size: 12px;}
+    #header {display: none;}
+    #headermoblie {display: block;}
+    #sideSNS {top: 60vh;}
+    #section01 {flex-direction: column;}
+    #sideSNS {display: none;}
+    #iconbot {display: flex; background-color: #f2f2f2;}
+
+    .sitewrap {width: 100%;}
+    .siteM {width: 48%;}
+
+    #m_navi {display: block;}
+
+    .pro {width: 100%; border-right: none;}
+    .profile img {width: 20%; margin: 0 40%;}
+    .pro02 {display: none;}
+    .pro03 {display: none;}
+
+    .pro04 {width: 90%; margin: 5% auto 0; display: block; border-top: 1px solid #efefef;}
+    .pro04 .pro04txt {
+        width: 25%; height: 3vw; padding: 2% 0 3%; 
+        font-size: 0.8rem; line-height: 3vw; text-align: center; 
+    }
+    .info {width: 100%;}
+}

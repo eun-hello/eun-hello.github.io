@@ -1,0 +1,279 @@
+@import url(./core.css);
+@import url(./common.css);
+
+.color01 {color: #fee600;}
+.color02 {color: #e7c3a2;}
+
+/* * {outline: 1px solid red;} */
+
+.menu.active {background: url(../img/support/bg_link_eshop3.png) no-repeat center/cover;background-color: #f7f7f7;}
+.naviBox.active {background-color: #fff;}
+
+/*===================================Scroll Navi=====================================*/
+
+#scrollnavi {width: 100%; height: 4vw; color: #fff; position: sticky; top: 0; z-index: 20; display: none;}
+#scrollnavi.active {display: block !important;}
+#scrollnavi .scrollhead {width: 100%; height: 4vw; margin: 0 auto; font-size: 1.2rem; position: relative; top: -4vw; transition: top 0.3s; background-color: #333;}
+.scrollhead.active {top: 0vw !important; transition: top 0.3s;}
+.scrollheadin {width: 90%; height: inherit; margin: 0 auto;}
+.scrollheadin a {height: inherit;}
+.scrollheadin img {height: 80%;}
+
+.s_naviin {
+    position: relative;
+    width: 100%; height: 2.5vw; background-color: #fff; color: #333;
+    outline: 1px solid rgb(225, 225, 225); display: none; 
+}
+.s_naviin.active {display: block !important;}
+.s_naviin li {
+    width: 16.6666666666666666%; height: inherit;
+    text-align: center; line-height: 2.5vw;
+}
+.s_naviin li:first-child {font-size: 1.5rem; line-height: 3vw;}
+.s_naviin li:hover a {transform: scale(120%); color: #fee600; /* text-shadow: 1px 1px 2px #777; */}
+.scroll_logo {cursor: pointer;}
+
+/* #headermoblie .m_menu02 {top: -42px;} */
+
+/*===================================Sidemenu=====================================*/
+
+.sidemenu {
+    width: 100%; height: 100vh; background-color: rgba(51, 51, 51, 0.425); position: fixed; top: 0; z-index: 21;
+    display: none; color: #fff;
+}
+.sidemenu.active {display: block;}
+.sidelist_menu {
+    width: 30%; height: 100vh; background-color: #333; z-index: 5; 
+    box-shadow: 1px 1px 5px #000; transition: 0.4s; margin-left: -30%;
+}
+.sidelist_menu.active {margin-left: 0%;}
+
+.sideclick {width: 70%; height: 100vh; position: absolute; top: 0; left: 30%; z-index: 5;}
+
+.sidelist_menu01 {width: 90%; margin: 0 5%; display: flex; flex-direction: column;}
+.sidelist_menu01 > li > a:first-child {margin: 3% 0 5%;}
+.sidelist_menu01 > li > a {font-size: 1.2rem; margin: 5% 0; color: #fee600;}
+.sidelist_menu01 ul > li {height: 2vw; line-height: 2vw; padding: 1% 2%;}
+.sidelist_menu01 ul > li:hover {transform: scale(110%);}
+
+.sideLogo {width: 15%; position: relative; margin: 0 auto; padding-top: 3%;}
+.sideLogo img {width: 100%;}
+
+/*--------------------------------SECTION01-------------------------------------------------*/
+
+#section00 {width: 100%;}
+#section00 img {width: 100%;}
+
+#section01 {
+    width: 100%; height: auto; background: url(../img/support/bg_support_step.jpg);
+    margin: 1% 0 8%; padding: 1% 0;
+}
+.service {width: 90%; margin: 0 auto; display: flex; justify-content: space-between;}
+.service01 {width: 48.7%; height: inherit; display: flex; justify-content: space-between;}
+
+.servicelistA {width: 30%; height: 10vw; cursor: pointer;}
+.servicelistA img {width: 100%;}
+
+.servicelist01 {background: url(../img/support/section01/bg_S1.png) no-repeat center/cover; background-position: right;}
+.servicelist02 {background: url(../img/support/section01/bg_S2.png) no-repeat center/cover; background-position: right;}
+.servicelist03 {background: url(../img/support/section01/bg_S3.png) no-repeat center/cover; background-position: right;}
+.servicelist04 {background: url(../img/support/section01/bg_S4.png) no-repeat center/cover; background-position: right;}
+.servicelist05 {background: url(../img/support/section01/bg_S5.png) no-repeat center/cover; background-position: right;}
+.servicelist06 {background: url(../img/support/section01/bg_S6.png) no-repeat center/cover; background-position: right;}
+
+.servicetitle {margin: 10% 0 0 5%; font-size: 1.2rem; font-weight: normal; /* transform: translateY(5vw); */}
+
+/*--------------------------------SECTION02-------------------------------------------------*/
+
+#section02 {
+    width: 90%; height: auto; margin: 5% auto; 
+    display: flex; justify-content: space-between;
+}
+.s02Btn {
+    width: 25%; height: 3vw; text-align: center; line-height: 3vw;
+    background: url(../img/support/bg_link_eshop2.png) no-repeat center/cover;
+    cursor: pointer; 
+}
+.s02Btn a {font-size: 1rem;}
+.s02Btn.active {background: url(../img/support/bg_link_eshop3.png) no-repeat center/cover;}
+
+/*--------------------------------SECTION03-------------------------------------------------*/
+
+#section03 {width: 90%; margin: 0 auto; margin-bottom: 5%;}
+
+.s03title {width: 100%; font-size: 2rem; padding: 1% 0 2%;}
+
+.hello {display: flex; width: 100%;}
+.btn {width: 33.333333333333%; height: 3vw; opacity: 0.7;}
+.btn a {width: 100%; height: 100%; display: block; text-align: center; line-height: 3vw; font-size: 1.5rem;}
+.btn.active {background-color: #fee600; opacity: 1;}
+
+.bye {display: flex; width: 100%;}
+.list {width: 100%; height: 21vw; display: none;}
+.list {text-align: center;}
+.list01.active {display: block;}
+.list02.active {display: block;}
+.list03.active {display: block;}
+
+.s03listin {width: 100%;  display: flex; height: 3vw; line-height: 3vw; font-size: 1rem; border-bottom: 1px solid rgb(100, 100, 100); overflow: hidden;}
+.s03listin_title {background-color: #fee600; font-size: 1.1rem;}
+.s03listin_art {background-color: rgba(228, 228, 228, 0.76);}
+
+.s03listhi {width: 10%; height: inherit; text-align: center;}
+.s03listwo {width: 60%; height: inherit; text-align: center;}
+.s03listwo:hover {text-decoration: underline;}
+.s03c {cursor: pointer;}
+.s03art {color: red; font-weight: bold;}
+
+/*--------------------------------SECTION04-------------------------------------------------*/
+
+#section04 {width: 90%; margin: 0 auto; margin-bottom: 5%;}
+.s04line {width: 50%; height: 2px; background-color: #333; margin: 1% 0 2%;}
+.s04ho.active {color: #fee600}
+
+.s04hello {display: flex; justify-content: space-between; margin-top: 4%; height: 21.8vw;}
+.s04hello1 {width: 60%; height: inherit;}
+.s04hello1 img {width: 100%;}
+
+.s04hello2 {width: 38%; height: inherit;}
+.s04h2_title {width: 100%; height: 20%; font-size: 1.5rem; display: flex; align-items: center;}
+.s04h2_content {width: 100%; height: 80%; display: flex; justify-content: space-between;}
+
+.eshopitem {width: 48%; overflow: hidden;}
+.eshopitem img {width: 100%;}
+.eshoptxt {
+    width: 100%; height: 5vw; background-color: rgb(250, 250, 250, 0.8); z-index: 5; 
+    position: relative;transition: 0.5s; 
+}
+.etxtBox {width: 100%; height: 5vw; display: flex; align-items: center; padding-left: 2%;}
+.eBtn {width: 100%; height: 3vw; display: flex;}
+.eBtn > div {
+    width: 50%; text-align: center; line-height: 3vw; border-collapse: collapse;
+    background-color: #333; color: #fff;
+}
+.eBtn01 {border-right: 1px solid #efefef;}
+.eshopitem:hover .eshoptxt {margin-top: -3vw;}
+.eBtn > div:hover {color: #fee600;}
+
+/*--------------------------------SECTION05-------------------------------------------------*/
+
+#section05 {width: 90%; margin: 5% auto 0;}
+
+.s05top {display: flex; flex-direction: column;}
+.s05title {font-size: 2rem;}
+.s05line {width: 100%; height: 2px; background-color: #333; margin: 1% 0 2%;}
+.s05toptxt {font-size: 1rem; line-height: 1.5rem;}
+
+.s05con {display: flex; justify-content: space-between; margin-top: 5%;}
+.s05real {width: 30%; border: 1px solid #333; cursor: pointer;}
+.s05realhead {width: 100%; height: 20%; background-color: #fee600; display: flex; align-items: center;}
+.s05realhead P {margin-left: 5%; font-size: 1.5rem;}
+.s05realtext {width: 90%; height: 70%; margin: 5% auto 0; display: flex; flex-direction: column;}
+.s05realtext img {width: 25%;}
+
+.s05realme {width: 65%; display: flex; justify-content: space-between;}
+.s05imgBox {width: 22%; position: relative; left: 75%; top: -3%;}
+.s05imgBox img {width: 100%;}
+
+.s05realmelist {width: 20%; display: flex; flex-direction: column; align-items: center;}
+.s05realmelist img {width: 90%;}
+.s05realmelist p {width: 90%; margin-top: 5%; text-align: center; font-size: 1rem;}
+
+/*--------------------------------SECTION06-------------------------------------------------*/
+
+#section06 {width: 90%; margin: 2% auto 5%;}
+
+#boticon {width: 100%; display: flex; align-items: center; justify-content: center;}
+.boticonlist {width: 10%;}
+.boticonlist img {width: 80%; margin: 0 10%; transform: rotate(0deg); transition: all 0.2s}
+.boticonlist p {width: 100%; height: 1.5vw; line-height: 1.5vw; text-align: center; font-size: 0.9vw;}
+
+.boticonlistB.active {transform: rotate(44deg); transition: all 0.2s;}
+.boticonlistB:nth-child(2).active {transform: rotate(-44deg);}
+
+
+/*-----------------------------SECTION07------------------------------------------------*/
+
+#section07 {width: 90%; margin: 0 auto 5%;}
+.s07-0 {width: 100%;}
+
+.s07-1, .s07-2 {margin-top: 3%; border: 1px solid #333; border-left: 0.5vw solid #fee600; padding: 1% 0;}
+.s07-1 p {padding: 0 0.7vw;}
+.s07-2 p {padding: 0 0.7vw;}
+.s07_title {font-size: 1.5rem; margin-bottom: 3%; padding: 0 0.7vw;}
+.s07_title span {font-size: 0.8rem; color: #777;}
+
+/*===================================Media Screen=====================================*/
+/* 
+@media screen and (min-width : 2000px) {
+    html,body {font-size: 20px;}
+} */
+@media screen and  (min-width : 1260px) and (max-width : 1400px){
+    html,body {font-size: 14px;}
+}
+@media screen and  (min-width : 1025px) and (max-width : 1259px){
+    html,body {font-size: 12px;}
+}
+@media screen and  (min-width : 801px) and (max-width : 1024px){
+    html,body {font-size: 10px;}
+    .s03listhi01 {display: none;}
+    .s03listwo {width: 70%;}
+}
+@media screen and (max-width : 800px){
+    html,body {font-size: 10px;}
+    #header {display: none;}
+    #headermoblie {display: block;}
+    #sideSNS {top: 60vh;}
+    #sideSNS {display: none;}
+    #iconbot {display: flex; background-color: #f2f2f2;}
+    #navi {display: none;}
+    #scrollnavi {display: none;}
+
+    .byemenu {display: none;}
+/*------------------SECTION01----------------------------*/
+    .service {display: flex; flex-direction: column;}
+    .service01 {width: 100%;}
+    .service01:first-child {margin-bottom: 1%;}
+    .servicelistA {align-items: unset;}
+    .servicetitle {margin-left: 5%;}
+/*------------------SECTION03----------------------------*/
+    .btn a {font-size: 1rem;}
+    .s03listin_title {font-size: 0.9rem;}
+    .s03listin_title01 {font-size: 0.9rem;}
+    .s03listin_title02 {font-size: 0.9rem;}
+    .s03listin {font-size: 0.8rem;}
+
+    .s03listhi {width: 15%;}
+    .s03listhi01 {display: none;}
+    .s03listhi02 {width: 20%;} 
+    .s03listhi03 {display: none;}
+    .s03listwo {width: 65%; height: inherit; text-align: center;}
+/*---------------section05--------------------*/
+    .s05realhead {height: 35%;}
+    .s05realtext {height: 65%; margin-top: 1%;}
+    .s05con {display: flex; flex-direction: column;}
+    .s05real {width: 100%;}
+    .s05realme {width: 100%; margin-top: 5%;}
+    .s05imgBox {width: 10%; left: 90%;}
+/*---------------section04--------------------*/
+    .s04hello1 {width: 37%; display: flex; align-items: center; justify-content: center;}
+    .s04hello2 {width: 60%; cursor: pointer;}
+    .s04h2_title {font-size: 1.2rem;}
+/*---------------section06--------------------*/
+    #boticon {margin-top: 7%;}
+    .boticonlist {width: 20%;}
+    .boticonlist img {width: 50%; margin: 0 25%;}
+}
+@media screen and (max-width : 468px){
+    html, body {font-size: 12px;}
+    .service01 {width: 100%; display: flex; flex-direction: column;}
+    .servicelistA {width: 100%; height: 15vw; border: 1px solid #333; border-collapse: collapse;}
+    .service01:first-child {margin-bottom: 0%;}
+
+    .s02Btn a {font-size: 0.5rem;}
+    .s05realmelist p {font-size: 5px !important;}
+/*---------------section07--------------------*/
+    .s07-1 p {padding: 0 1vw;}
+    .s07-2 p {padding: 0 1vw;}
+    .s07_title {padding: 0 1vw;}
+}

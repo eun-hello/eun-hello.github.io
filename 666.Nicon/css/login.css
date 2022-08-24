@@ -1,0 +1,256 @@
+@import url(./core.css);
+@import url(./common.css);
+
+/* * {outline: 1px solid red;} */
+
+body {height: auto;}
+
+.colorY {color: #fee600;}
+.color01 {color: #fee600;}
+.color02 {color: #e7c3a2;}
+
+#header {
+    z-index: 50;
+    width: 95%; height: 7vw; padding-left: 5%; position: sticky; top: 0; background-color: rgb(254, 254, 254);
+    display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgb(225, 225, 225);
+} 
+.headericon {display: flex; align-items: center;}
+.headericon a > img {width: 5vw;}
+.headericon > ul {display: flex; flex-direction: column; margin-left: 1vw;}
+.headericon > ul li {display: flex; padding: 0.3vh 0;}
+.headericon i {font-size: 1rem;}
+.log {color: #555;}
+
+/*========================================navbar====================================================*/
+
+#navbar {margin-top: 5vh; font-size: 1.2rem;}
+#navbar > li a {width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+#navbar > li {width: 10vw; height: 4vh; box-sizing: border-box;}
+#navbar > li:hover {border-bottom: 4px solid #fee600;}
+#navbar > li:last-child:hover {border-bottom: none; transform: scale(110%);}
+#navbar > li div {display: none;}
+#navbar > li:hover div {display: block;}
+
+.navbarcont01 {position: relative; width: 25vw; left: -1vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont02 {position: relative; width: 50vw; left: -10vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;;}
+.navbarcont03 {position: relative; width: 45vw; left: -10vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont04 {position: relative; width: 49vw; height: 30vh; left: -30vw; top: 4px; border: 1px solid rgb(225, 225, 225); background-color: #fff;}
+.navbarcont05 {
+    position: relative; width: 50vw; height: 40vh; left: -21vw; top: 4px; 
+    border: 1px solid rgb(225, 225, 225);/*  background-color: #fff; */
+    background: url(../img/menu/CLUB/clubN.jpg) no-repeat center/cover;
+}
+
+
+#iconmenu {display: flex; font-size: 1vw;}
+#iconmenu {width: 25vw;}
+#iconmenu ul {display: flex; align-items: center; padding-top: 2vh;}
+#iconmenu ul li {margin-left: 1vw; text-align: center; font-size: 0.8rem;}
+#iconmenu ul li:hover {color: #e7c3a2;}
+#iconmenu img {width: 5vw;}
+#iconmenu a {padding-bottom: 1vh;}
+.navcontbot {margin-bottom: 15px;}
+
+/*=================================Eshop=======================================*/
+
+.navbarcont02 ul {width: 50vw; display: flex; justify-content: space-around; padding-top: 2vh; align-items: center;}
+.navbarcont02 .imgbox {width: 10vw; height: 10vw; border-radius: 50%;}
+.navtextbox {width: 10vw; text-align: center; margin-bottom: 15px; font-size: 1rem;}
+.imgbox {overflow: hidden; outline: 8px solid #fff;}
+.navbarcont02 .imgbox:hover {outline: 8px solid #fee600;}
+.navbarcont02 img {height: 12vw; transition: all 0.3s; }
+.imgbox:hover img {height: 10vw; }
+
+/*=================================event=======================================*/
+
+.navbarcont03title {display: flex !important; padding-top: 2vh; font-size: 1.2rem; font-weight: bold; }
+.navbarcont03box {display: flex !important; flex-direction: row; justify-content: space-around; margin-bottom: 15px;}
+.navbarcont03box div {width: 20vw; margin-top: 1vh;}
+.navbarcont03box img {width: 100%; /* border: 8px solid #888; */ border-radius: 15px;}
+.navbarcont03box img:hover {border: 0.4vw solid #fee600; box-sizing: border-box; transition: 0.3s;}
+.navbarcont03title > a {width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+
+/*================================CLUB:N============================================*/
+
+.navbarcont05 > ul {
+    display: flex; 
+    position: relative; top: 15vh; left: 2vw;
+}
+.navbarcont05 li {
+    width: 10vw; height: 10vw; color: #fff; border-radius: 50%; outline: 5px solid #e7c3a2;
+    margin: 2%; background-color: rgba(51, 51, 51, 0.4);
+}
+.navbarcont05 li:hover {background-color: rgba(51, 51, 51, 0.8); color: #fee600;}
+.navbarcont05 {font-size: 1.1rem;}
+.navbarcont05 p {position: relative; left: 0;}
+
+/*============================niconschool====================================*/
+
+#navbarcont04 {background: url(../img/menu/CLUB/banner_file125.png) no-repeat center/cover;}
+#navbarcont04 .schoolbtn {display: flex; flex-direction: row; position: relative; left: 17vw; top: 3vh;}
+#navbarcont04 .schoolbtn li {width: 5vw; height: 5vw;/*  background-color: #fff; */ margin: 8px; border-radius: 50%; border: 0.3vw solid #fee600;}
+#navbarcont04 .schoolbtn li:hover {background-color: #dbdbdb80;}
+#navbarcont04 .schoolbtn a {color: #fff; font-size: 1rem;/*  font-weight: bold; */}
+#navbarcont04 img {width: 49vw;}
+
+/*===============================Side SNS=============================================*/
+
+#sideSNS {display: flex; flex-direction: column; position: fixed; right: 2vw; top: 70vh;}
+#sideSNS img {padding: 1px;}
+#sideSNS img:hover {opacity: 0.6;}
+
+#iconbot {display: none; width: 100%; height: auto; align-items: center; justify-content: center;}
+#iconbot img {padding: 10px;}
+
+/*===============================SECTION01=============================================*/
+
+#section01 {width: 90%; margin: 2% auto 1%;}
+
+.s01top {display: flex; flex-direction: column;}
+.s01title {font-size: 2rem;}
+.s01line {width: 100%; height: 2px; background-color: #333; margin: 1% 0 2%;}
+.s01toptxt {font-size: 1rem; line-height: 1.5rem;}
+
+/*===============================SECTION02=============================================*/
+
+#section02 {
+    width: 90%; height: auto; margin: 0 auto 5%; border: 1px solid #999; display: flex; padding: 1vw;
+    background: url(../img/log-in/icons-gray-bg.png);
+}
+.s02_01 {width: 50%; display: flex; align-items: center; justify-content: center;}
+.s02_01 img {border-radius: 10px; width: 80%;}
+.s02_02 {width: 50%;}
+.s02_02top {width: 100%; height: 40%; display: flex; align-items: center; justify-content: center;}
+.s02_02top .s02_02toptxt {width: 100%; height: auto;}
+.s02_02toptxt {padding: 1vw 0;}
+.s02_02toptxt P {font-size: 2rem; padding: 0.5vw 0; color: #555;}
+.s02_02toptxt P span {color: #fee600;}
+.s02_02bot {display: flex; padding: 1vw 0;}
+.s02_02bot ul {display: flex; width: 60%; flex-direction: column;}
+.s02_02bot ul li {width: 100%; height: 1.9vw; display: flex; padding: 0.1vw 0; display: flex; align-items: center;}
+.s02_02bot ul li input {width: 50%; border: 1px solid #999; border-radius: 5px; padding: 0.3vw 1vw;}
+.s02_02bot ul li div {width: 40%; padding: 0.4vw 0;} 
+
+.logBtn {
+    width: 15%; height: 4.2vw; background:url(../img/log-in/btn_login_m.jpg) no-repeat center/cover; 
+    color: #fff; text-align: center; line-height: 4.4vw; font-size: 1.4rem; margin-left: -0.1vw;
+    border-radius: 10px;
+}
+.s02_cheakbox {width: 60%; display: flex; justify-content: space-between; align-items: center;}
+.s02_cheakbox label {display: flex; align-items: center;}
+
+.checkboxwrap {display: flex; align-items: center; }
+.checkboxwrap .checkbox{display: none !important;}
+.checkboxwrap .checkbox + label {
+    display: inline-block; background-color: #efefef; background-size: cover; width: 0.8vw; height: 0.8vw; cursor:pointer; margin-right: 9px; border-radius: 50%;
+    color: #333; border: 1px solid #888;
+}
+.checkboxwrap .checkbox:checked + label {background-color: #fee600; background-size: cover; border-radius: 50%; color: #333;}
+#mail {background-color: #fff;}
+#password {background-color: #fff;}
+#mail:focus {
+    outline: 0.15vw solid #fee600; border: 1px solid #fee600;
+}
+#password:focus {
+    outline: 0.15vw solid #fee600; border: 1px solid #fee600;
+}
+
+.forgot {color: #e7c3a2; text-decoration: underline;}
+.forgot.active {animation: login 1s linear infinite;}
+
+.s02_sns {width: 80%; margin: 1vw 0;}
+.s02_sns ul {width: 100%;}
+.s02_snsBox {
+    width: 40%; float: left; padding: 0.5vw 1vw; margin: 0.5vw 1vw 0.5vw 0;
+    text-align: center; border-radius: 20px;
+    box-shadow: 1px 1px 3px #999;
+}
+.naver {font-weight: bold;}
+.s02_snsBox:nth-child(1) {background-color: #03c75a; color: #fff;}
+.s02_snsBox:nth-child(2) {background-color: #3571f2; color: #fff;}
+.s02_snsBox:nth-child(3) {background-color: #fee500; color: #333;}
+.s02_snsBox:nth-child(4) {background-color: #ffffff; color: #333;}
+
+.signacc {font-size: 1.2rem; padding-bottom: 0.5vw;}
+.signacc span {color: #e7c3a2; text-decoration: underline; cursor: pointer;}
+.sign.active {animation: login 1s linear infinite;}
+
+@keyframes login {
+    0% {color: #fee600;}
+    100% {color: #e7c3a2;}
+}
+
+/*===============================hello_login=============================================*/
+
+.hello_login  {width: 100%; height: 1vw; display: flex; opacity: 0;}
+.txtmail {width: 50%; height: inherit; text-align: center;}
+.txtpassword {width: 50%; height: inherit; text-align: center;}
+
+/*===============================loading=============================================*/
+
+#loading {width: 100%; height: 100vh; position: fixed; top: 0; background-color: rgba(51, 51, 51, 0.8); display: none; overflow: hidden;}
+#loading.active {display: block;}
+
+.loadData {width: 70%; margin: 0 auto; position: relative; top: 50%; transform: translateY(-50%);}
+.loadData P {color: #fff; font-size: 1.5rem;}
+.loadData .power {width: 5%; margin: 0 47.25%;}
+
+.chargeBox {width: 100%; height: 10px; /* outline: 1px solid red; */ 
+    overflow: hidden; background-color: #efefef;
+    border-radius: 10px; 
+}
+.chargeIn {
+    position: relative; left: -200%; border-radius: 10px; 
+    width: 170%; height: 10px; background-color: #fee600;
+    animation: energe 1s linear infinite;
+}/* rgb(243, 255, 131) */
+.chargeLine {width: 1px; height: 5px; background-color: #333;}
+@keyframes energe {
+    0% {transform: translateX(0);}
+    100% {transform: translate(100%);}
+}
+.swal2-actions button {width: 20%; font-size: 1.5rem; font-weight: bold; background:url(../img/log-in/btn_login_m.jpg) no-repeat center/cover !important;}
+/*===============================MEDIA SCREEN=============================================*/
+
+@media screen and (min-width : 2000px) {
+    html,body {font-size: 20px;}
+}
+@media screen and  (min-width : 1260px) and (max-width : 1400px){
+    html,body {font-size: 14px;}
+}
+@media screen and  (min-width : 1025px) and (max-width : 1259px){
+    html,body {font-size: 12px;}
+    .logBtn {font-size: 1.2rem;}
+}
+@media screen and  (min-width : 801px) and (max-width : 1024px){
+    html,body {font-size: 10px;}
+    .logBtn {font-size: 1.1rem;}
+}
+@media screen and (max-width : 800px){
+    html,body {font-size: 10px;}
+    #header {display: none;}
+    #headermoblie {display: block;}
+    #sideSNS {top: 60vh;}
+    #sideSNS {display: none;}
+    #iconbot {display: flex; background-color: #f2f2f2;}
+    #navi {display: none;}
+    #scrollnavi {display: none;}
+
+    #section02 {display: flex; flex-direction: column; align-items: center;}
+    .s02_01 {display: none;}
+    .s02_02 {width: 60%; margin-left: 6%;} 
+    .s02_02bot {flex-direction: column;}
+    .s02_02bot ul {width: 92%;}
+    .s02_cheakbox {width: 91%; font-size: 1rem;}
+    .s02_02bot ul li {padding: 0.5vw 0; height: auto;}
+    .s02_02bot ul li input {padding: 0.5vw 1.5vw;}
+    .logBtn {width: 89%; margin: 1vw 0 0;}
+    .s02_sns {width: 100%;}
+}
+@media screen and (max-width : 375px){
+    .sidelogo {width: 50%; position: absolute; top: 80%; right: -5%;}
+    .logBtn {font-size: 1rem;}
+}
+@media screen and (max-width : 450px){
+    .s02_cheakbox {display: flex; flex-direction: column;}
+}
