@@ -1,0 +1,76 @@
+@import url(./core.css);
+@import url(./common.css);
+@import url(./logo.css);
+
+/* * {outline: 1px solid red;} */
+
+.color01 {color: #1D4167;}
+.color02 {color: #fee600;}
+.color03 {color: #C60226;}
+.color04 {color: rgb(217, 226, 233);}
+.color05 {color: #d67a27;}
+.color06 {color: #f05254;}
+
+.blinkColor {color: #333; animation: blinkColor 1s ease-in-out infinite;}
+@keyframes blinkColor {
+    50% {color: #f05254; transform: scale(110%);}
+}
+
+
+/*-------------------Swiper---------------------------*/
+
+.swiper {width: 100%; height: 100%; margin-top: -5vw;}
+.swiper-slide {    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;} */
+
+.swiper-pagination {width: 10%; left: 2%; font-size: 0.8rem; text-indent: 10px; color: #f05254; text-shadow: 1px 1px 3px rgb(223, 223, 223);}
+.swiper-pagination-bullet {border-radius: 0%; width: 0.2vw; height: 2.5vw; background-color: #f05254;}
+.swiper-pagination-bullet:nth-child(1)::after {content:'SITE'; position: relative; top: 30%; transform: translateY(-50%);}
+.swiper-pagination-bullet:nth-child(2)::after {content:'SiteMAP'; position: relative; top: 30%; transform: translateY(-50%);}
+.swiper-pagination-bullet:nth-child(3)::after {content:'CONCEPT'; position: relative; top: 30%; transform: translateY(-50%);}
+.swiper-pagination-bullet:nth-child(4)::after {content:'COLOR'; position: relative; top: 30%; transform: translateY(-50%);}
+.swiper-pagination-bullet:nth-child(5)::after {content:'Typography'; position: relative; top: 30%; transform: translateY(-50%);}
+.swiper-pagination-bullet:nth-child(6)::after {content:'CODE'; position: relative; top: 30%; transform: translateY(-50%);}
+.swiper-pagination-bullet:nth-child(7)::after {content:'VIPS'; position: relative; top: 30%; transform: translateY(-50%);}
+
+/*-------------------------section01--------------------------------*/
+
+.imgslide {display: flex; align-items: center; justify-content: center;}
+.S_imgBox {width: 90%; margin: 0 auto; display: flex; align-items: center; justify-content: center;}
+.website img {width: 80%;}
+
+.logoVIP {width: 10vw; height: 10vw;}
+.swipBtn2022 P {text-align: center; font-size: 1.5rem; font-weight: bold;}
+.swipBtn2022 img {width: 10vw; height: 10vw;}
+.swipBtn2022:hover img {transform: scale(110%);}
+
+
+/*----------------------media screen-----------------------------------*/
+
+@media screen and  (min-width : 1025px) and (max-width : 1259px){
+    html,body {font-size: 12px;}
+    .S_imgBox img {width: 100%;}
+}
+@media screen and  (min-width : 801px) and (max-width : 1024px){
+    html,body {font-size: 10px;}
+    .S_imgBox img {width: 100%;}
+}
+@media screen and (max-width: 800px) {
+    html,body {font-size: 10px;}
+    .S_imgBox img {width: 100%;}
+}
